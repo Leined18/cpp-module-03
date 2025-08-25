@@ -42,7 +42,7 @@ void ClapTrap::attack(const std::string &target)
 		return ;
 	}
 	energyPoints--;
-	std::cout << "⚔️ ClapTrap " << name << " ataca a " << target << " causando " << attackDamage << " puntos de daño!" << std::endl;
+	std::cout << "⚔️ ClapTrap " << name << " attacks " << target << " causing " << attackDamage << "  points of damage!" << std::endl;
 }
 
 /** Recibir daño */
@@ -51,7 +51,7 @@ void ClapTrap::takeDamage(unsigned int amount)
 	hitPoints -= amount;
 	if (hitPoints < 0)
 		hitPoints = 0;
-	std::cout << "💢 ClapTrap " << name << " recibe " << amount << " puntos de daño!" << std::endl;
+	std::cout << "💢 ClapTrap " << name << " recive " << amount << " points of damage!" << std::endl;
 }
 
 /** Repararse */
@@ -59,10 +59,10 @@ void ClapTrap::beRepaired(unsigned int amount)
 {
 	if (hitPoints <= 0 || energyPoints <= 0)
 	{
-		std::cout << "❌ ClapTrap " << name << " no puede repararse!" << std::endl;
+		std::cout << "❌ ClapTrap " << name << " can`t be repaired" << std::endl;
 		return ;
 	}
 	energyPoints--;
 	hitPoints += amount;
-	std::cout << "🔧 ClapTrap " << name << " se repara " << amount << " puntos de vida!" << std::endl;
+	std::cout << "🔧 ClapTrap " << name << " repair " << amount << " points of life!" << std::endl;
 }

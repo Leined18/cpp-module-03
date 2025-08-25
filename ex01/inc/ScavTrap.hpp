@@ -7,7 +7,7 @@
  * Clase ScavTrap
  * Hereda de ClapTrap y añade el modo guardia.
  */
-class ScavTrap : public ClapTrap
+class ScavTrap : virtual public ClapTrap
 {
   public:
 	ScavTrap(const std::string &name);
