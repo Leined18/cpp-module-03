@@ -13,7 +13,7 @@ class ClapTrap
 {
   protected:
 	std::string name;
-	int hitPoints;
+	int hitPoints; // the health of the bot
 	int energyPoints;
 	int attackDamage;
 

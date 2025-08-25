@@ -3,7 +3,7 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 NAME = fragtrap
 OBJDIR = obj
 HEADER_DIR = inc/
-SRCS = main.cpp ClapTrap.cpp FragTrap.cpp
+SRCS = main.cpp ClapTrap.cpp FragTrap.cpp ScavTrap.cpp
 OBJS = $(patsubst %.cpp,$(OBJDIR)/%.o,$(SRCS))
 
 all: $(NAME)
