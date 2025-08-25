@@ -6,7 +6,7 @@
 /*   By: danpalac <danpalac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/25 14:30:00 by danpalac          #+#    #+#             */
-/*   Updated: 2025/08/25 13:22:13 by danpalac         ###   ########.fr       */
+/*   Updated: 2025/08/25 13:44:05 by danpalac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,14 @@ int	main(void)
 	std::cout << "=============================" << std::endl;
 	clone.attack("EnemyBot");
 	clone.beRepaired(15);
-	clone.takeDamage(50);
+	clone.takeDamage(880);
+	clone.highFivesGuys(); // heredado de FragTrap
+	clone.guardGate();   // heredado de ScavTrap
+	clone.whoAmI();
+	clone.attack("AnotherEnemy");
+	clone.beRepaired(25);
+	clone.takeDamage(80);
+	
 	std::cout << std::endl;
 	std::cout << "=============================" << std::endl;
 	std::cout << "   Fin de main (se llaman destructores)" << std::endl;
